@@ -1,9 +1,58 @@
+@font-face {
+  font-family: 'Onest';
+  font-display: swap;
+  font-weight: 100;
+  font-style: normal;
+  src: url('../src/fonts/OnestThin1602-hint.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Onest';
+  font-display: swap;
+  font-weight: 200;
+  font-style: normal;
+  src: url('../src/fonts/OnestRegular1602-hint.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Onest';
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+  src: url('../src/fonts/OnestMedium1602-hint.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Onest';
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url('../src/fonts/OnestBold1602-hint.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Onest';
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+  src: url('../src/fonts/OnestExtraBold1602-hint.ttf') format('truetype');
+}
+
+/*global styling starts here*/
+*{
+  font-family: 'Onest', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.h1{
+  font-weight: 300;
+}
+/*global styling ends here*/
+
+/*this is the styling for the header element*/
 .mainHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 90px;
-  border-bottom: 1px solid #f78d14;
 }
 
 .mainHeader nav a {
@@ -11,30 +60,38 @@
   color: black;
   text-decoration: none;
   font-size: 25px;
-  font-weight: bold;
   margin: 0 20px;
   transition: 1s;
   padding: 10px 10px;
+  font-weight: 300;
+  border-radius: 5px;
 }
 
 .mainHeader nav a:hover {
   color: white;
   box-shadow: inset -300px 40px #000;
 }
+
+/*this is the styling for the main content*/
 .content {
   display: flex;
   height: 90vh;
-  align-items: center;
-  justify-content: center;
   background-image: linear-gradient(to right, #aa702d, #f7e9e5 1px);
-}
-
-.h1{
-  font-size: 2.5rem;
 }
 
 .content img{
   max-width: 450px;
+}
+
+/*this is the styling for the services section*/
+.services {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #ab45ff, #e5e8f7 1px);
+}
+
+.users img{
+  width: 200px;
+  border-radius: 50%;
 }
 
 @media(max-width: 1200px) {

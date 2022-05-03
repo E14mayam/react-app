@@ -1,7 +1,7 @@
 import React from "react";
 
 const Header = () => (
-    <header className="mainHeader">
+    <header className="mainHeader container py-3">
       <h1 className="h1">GordonTown</h1>
       <nav>
           <a href="somewhere.com">Home</a>
